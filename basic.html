@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>eSDFront</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" type="text/css" href="../app/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One|Lobster|Ubuntu" rel="stylesheet"> 
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  </head>
+  <body>
+    <!-- Add your site or app content here -->
+
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+        <header class="mdl-layout__header">
+          <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">eSDFront</span>
+
+            <!-- login -->
+            <button type="button" class="mdl-button show-modal">connexion</button>
+            <dialog class="mdl-dialog">
+              <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+
+              
+                    
+
+                    <div class="connexion">
+                      <input type="text" id="pseudo" placeholder="Pseudo">
+
+                      <input type="password" id="mdp" placeholder="Mot de passe">
+
+                        
+
+                      <button>connexion</button>
+
+                        </br>
+                     
+                         <button id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+                             <i class="material-icons">account_circle</i>Sign-in with Google
+                         </button>
+                       
+
+
+                      <p>Vous n'avez pas de compte? <a href="">S'inscrire</a></p>
+                    </div>
+
+              
+
+              </div>
+            </dialog>
+
+
+            <script>
+              var dialog = document.querySelector('dialog');
+              var showModalButton = document.querySelector('.show-modal');
+              if (! dialog.showModal) {
+                dialogPolyfill.registerDialog(dialog);
+              }
+              showModalButton.addEventListener('click', function() {
+                dialog.showModal();
+              });
+              dialog.querySelector('.close').addEventListener('click', function() {
+                dialog.close();
+              });
+            </script>
+
+          </div>
+          <!-- Tabs -->
+          <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+            <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
+            <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
+          </div>
+        </header>
+        
+        <main class="mdl-layout__content">
+          <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+            
+          </section>
+          <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+            <div class="section2">
+
+
+                <div class="haut">
+
+                  <div class="header">
+
+                    <p>eSDFront</p>
+                    
+                  </div>
+
+                </div>
+
+                <div class="bas">
+
+                  <div class="gauche">
+                  </div>
+
+                  <div class="centre">
+                    <h1>Profil</h1>
+                  </div>
+
+                  <div class="droite">
+
+                    <div class="tof-utilisateur">
+                      <img src="https://fakeimg.pl/150x150/?text=utilisateur">
+                    </div>
+
+                    <div class="description">
+                      <h2>Nom utilisateur</h2>
+
+                      <div class="descr-bas">
+
+                      
+                        <p>Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel commodi alicuius, quod idem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent, tamen saepe labefactari, si in honoris contentionem incidissen adipisci uterque non posset. Quod si qui longius in amicitia provecti essent, tamen saepe labefactari, si in honoris contentionem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent, tamen saepe labefactari, si in honoris contentionem</p>
+                          </br>
+                        <button>Modifer le profil</button>
+
+                      </div>
+
+                    </div>
+                    
+
+                  </div>
+
+                </div>
+
+            </div>
+          </section>
+          <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+            <div class="section3">
+              
+              <h1>Recherche</h1>
+
+            </div>
+          </section>
+        </main>
+      </div>
+
+
+
+      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAAyPRwvqSXfRnJOD2AyiCcZ2Al911PSGg",
+          authDomain: "esdf-e9a5b.firebaseapp.com",
+          databaseURL: "https://esdf-e9a5b.firebaseio.com",
+          projectId: "esdf-e9a5b",
+          storageBucket: "esdf-e9a5b.appspot.com",
+          messagingSenderId: "231762488222"
+        };
+        firebase.initializeApp(config);
+      </script>
+
+
+      <!-- build:js scripts/main.min.js -->
+      <script src="scripts/main.js"></script>
+      <!-- endbuild -->
+
+
+    <!-- Built with love using Web Starter Kit -->
+  </body>
+</html>
