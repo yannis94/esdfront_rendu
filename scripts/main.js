@@ -20,8 +20,8 @@ class ESDJob
 		this.auth = firebase.auth();
 		this.db = firebase.firestore();
 
-		const settings = {timestampsInSnapshots: true};
-		this.db.settings(settings);
+// 		const settings = {timestampsInSnapshots: true};
+// 		this.db.settings(settings);
 
 		this.storage = firebase.storage();
 		//Initiates firebase auth and listen to auth state changes
